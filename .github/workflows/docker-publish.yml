@@ -18,6 +18,9 @@ jobs:
         with:
           args:
             build
+      - name: path
+        run: |
+          ls
         
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
