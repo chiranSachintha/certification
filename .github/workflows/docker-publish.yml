@@ -31,10 +31,7 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Build and push Docker image
-        uses: docker/build-push-action@v5
-        with:
-          context: ./target/docker/greeter/Dockerfile
-          push: true
-          tags: chiransa/wso2:v1
-          platforms: linux/amd64,linux/arm64
+      - name: Push Docker Image
+        run: |
+           docker push chiransa/wso2:v1
+
