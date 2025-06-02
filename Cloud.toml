@@ -1,0 +1,4 @@
+[container.image]
+repository="chiransa"   # Your Docker Hub username
+name="wso2"             # Repository name (as created)
+tag="v1"  
